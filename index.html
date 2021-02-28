@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/css/styles.min.css">
+
+  <title>Frontend Mentor | Pricing component with toggle</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card-header">
+      <h1 class="card-header__title">Our Pricing</h1>
+
+      <div class="card-header__toggle">
+        <p class="card-header__option">Annually</p>
+
+        <label class="card-header__checkbox">
+          <input type="checkbox" id="toggleButton" class="card-header__input">
+          <span class="card-header__switch"></span>
+        </label>
+
+        <p class="card-header__option">Monthly</p>
+
+      </div>
+    </div>
+
+    <div class="card__container">
+      <div class="card card--secondary">
+
+        <p class="card__name card__name--secondary">Basic</p>
+
+        <span class="card__price-container card__price-container--secondary">
+          <p class="card__currency">&dollar;</p>
+          <p class="card__amount" id="basicAmount">19.99</p>
+        </span>
+
+        <p class="card__detail card__detail--secondary">500 GB Storage</p>
+        <p class="card__detail card__detail--secondary">2 Users Allowed</p>
+        <p class="card__detail card__detail--secondary">Send up to 3 GB</p>
+
+        <button class="btn btn--primary">
+          <div class="btn__container">
+            <span>Learn More</span>
+          </div>
+        </button>
+
+      </div>
+
+
+      <div class="card card--primary">
+
+        <p class="card__name card__name--primary">Professional</p>
+
+        <span class="card__price-container card__price-container--primary">
+          <p class="card__currency">&dollar;</p>
+          <p class="card__amount" id="professionalAmount">24.99</p>
+        </span>
+
+        <p class="card__detail card__detail--primary">1 TB Storage</p>
+        <p class="card__detail card__detail--primary">5 Users Allowed</p>
+        <p class="card__detail card__detail--primary">Send up to 10 GB</p>
+
+        <button class="btn btn--secondary">
+          <div class="btn__container">
+            <span>
+              Learn More
+            </span>
+          </div>
+        </button>
+      </div>
+
+
+      <div class="card card--secondary">
+
+        <p class="card__name card__name--secondary">Master</p>
+
+        <span class="card__price-container card__price-container--secondary">
+          <p class="card__currency">&dollar;</p>
+          <p class="card__amount" id="masterAmount">39.99</p>
+        </span>
+
+        <p class="card__detail card__detail--secondary">2 TB Storage</p>
+        <p class="card__detail card__detail--secondary">10 Users Allowed</p>
+        <p class="card__detail card__detail--secondary">Send up to 20 GB</p>
+
+        <button class="btn btn--primary">
+          <div class="btn__container">
+            <span>
+              Learn More
+            </span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
