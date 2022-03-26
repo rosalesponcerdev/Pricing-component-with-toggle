@@ -8,12 +8,12 @@
     padding-left: 1.8125rem;
     padding-right: 1.8125rem;
 
-    @media (max-width:475px) {
+    @media (max-width:768px) {
         margin-left: auto;
         margin-right: auto;
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:769px) {
         width: 21.875rem;
     }
 
@@ -24,7 +24,7 @@
     &--primary {
         background: linear-gradient($primary-gradient);
 
-        @media (min-width:1440px) {
+        @media (min-width:769px) {
             height: 31.1875rem !important;
 
             .btn {
@@ -39,7 +39,7 @@
         height: 28.3125rem;
     }
 
-    @media (max-width:475px) {
+    @media (max-width:768px) {
         &:not(:first-of-type) {
             margin-top: 2.0625rem;
         }
@@ -49,7 +49,7 @@
         z-index: 1;
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:769px) {
         &__container {
             display: flex;
             align-items: center;

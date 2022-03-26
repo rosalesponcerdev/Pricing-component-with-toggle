@@ -26,14 +26,14 @@ body {
     width: 100%;
     height: 100%;
 
-    @media (max-width:475px) {
+    @media (max-width:768px) {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         padding-top: 4.875rem;
         padding-bottom: 4.875rem;
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:769px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -64,7 +64,7 @@ body {
         left: 0;
         right: 0;
 
-        @media (min-width:1440px) {
+        @media (min-width:769px) {
             background-size: 21%;
         }
     }
@@ -72,17 +72,17 @@ body {
     &::before {
         background-image: url('../../images/bg-top.svg');
 
-        @media (max-width:475px) {
+        @media (max-width:768px) {
             background-position: 12rem -2rem;
         }
 
-        @media (min-width:1440px) {
+        @media (min-width:769px) {
             background-size: 23%;
             background-position: right top;
         }
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:769px) {
         &::after {
             background-image: url('../../images/bg-bottom.svg');
             background-position: bottom left;
