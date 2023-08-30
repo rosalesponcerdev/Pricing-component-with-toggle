@@ -1,10 +1,10 @@
-rm -r /etc/nginx/html/pricing-component-with-toggle/
-mkdir /etc/nginx/html/pricing-component-with-toggle
+rm -r /var/www/briefcase/pricing-component-with-toggle/
+mkdir /var/www/briefcase/pricing-component-with-toggle
 
-mkdir /etc/nginx/html/pricing-component-with-toggle/images /etc/nginx/html/pricing-component-with-toggle/dist /etc/nginx/html/pricing-component-with-toggle/dist/css
+mkdir /var/www/briefcase/pricing-component-with-toggle/images /var/www/briefcase/pricing-component-with-toggle/dist /var/www/briefcase/pricing-component-with-toggle/dist/css
 
-cp -rf ./dist/css/* /etc/nginx/html/pricing-component-with-toggle/dist/css/
-cp -rf ./images/* /etc/nginx/html/pricing-component-with-toggle/images/
+mv ./dist/css/* /var/www/briefcase/pricing-component-with-toggle/dist/css/
+mv ./images/* /var/www/briefcase/pricing-component-with-toggle/images/
 
-cp -rf ./app.js /etc/nginx/html/pricing-component-with-toggle/
-cp -rf ./index.html /etc/nginx/html/pricing-component-with-toggle/
+mv ./app.js /var/www/briefcase/pricing-component-with-toggle/
+mv ./index.html /var/www/briefcase/pricing-component-with-toggle/
